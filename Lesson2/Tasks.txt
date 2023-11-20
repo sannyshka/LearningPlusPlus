@@ -1,0 +1,206 @@
+Task1.
+
+#include <iostream>
+
+
+
+int main()
+
+{
+
+  int num1, num2;
+
+
+
+  std::cout << "Enter integer 1: ";
+
+  std::cin >> num1;
+
+
+
+  std::cout << "Enter integer 2: ";
+
+  std::cin >> num2;
+
+
+
+  int temp = num1;
+
+  num1 = num2;
+
+  num2 = temp;
+
+
+
+  std::cout << "Integer1: " << num1 << std::endl;
+
+  std::cout << "Integer2: " << num2 << std::endl;
+
+
+
+  return 0;
+
+}
+
+
+
+Task2.
+
+#include <iostream>
+
+#include <iomanip>
+
+
+
+int main()
+
+{
+
+double num = 1205.0608;
+
+int intNum = static_cast<int>(num);
+
+
+
+std::cout << "Significance (double): " << num << std::endl;
+
+std::cout << "Significance (int): " << intNum << std::endl;
+
+
+
+std::cout << std::setw(20) << std::right << std::setfill('$') << num << std::endl;
+
+
+
+return 0;
+
+}
+
+
+
+Task3.
+
+#include <iostream>
+
+#include <iomanip>
+
+
+
+int main()
+
+{
+
+double num = 120.19970608909090;
+
+
+
+std::cout << "Variable with accuracy 2 signs after coma: " << std::fixed << std::setprecision(2) << num << std::endl;
+
+std::cout << "Variable with accuracy 5 signs after coma: " << std::fixed << std::setprecision(5) << num << std::endl;
+
+std::cout << "Variable with accuracy 10 signs after coma: " << std::fixed << std::setprecision(10) << num << std::endl;
+
+
+
+std::cout << "Variable in standard notation: " << std::defaultfloat << num << std::endl;
+
+std::cout << "Variable in scientific notation: " << std::scientific << num << std::endl;
+
+
+
+return 0;
+
+}
+
+
+
+Task4.
+
+#include <iostream>
+
+
+
+enum WeekDay : int 
+
+{
+
+
+
+Monday = 1,
+
+Tuesday,
+
+Wednesday,
+
+Thursday,
+
+Friday,
+
+Saturday,
+
+Sunday
+
+};
+
+
+
+int main()
+
+{
+
+std::cout << "Monday: " << static_cast<int>(WeekDay::Monday) << std::endl;
+
+std::cout << "Tuesday: " << static_cast<int>(WeekDay::Tuesday) << std::endl;
+
+std::cout << "Wednesday: " << static_cast<int>(WeekDay::Wednesday) << std::endl;
+
+std::cout << "Thursday: " << static_cast<int>(WeekDay::Thursday) << std::endl;
+
+std::cout << "Friday: " << static_cast<int>(WeekDay::Friday) << std::endl;
+
+std::cout << "Saturday: " << static_cast<int>(WeekDay::Saturday) << std::endl;
+
+std::cout << "Sunday: " << static_cast<int>(WeekDay::Sunday) << std::endl;
+
+
+
+return 0;
+
+}
+
+
+
+Task5.
+
+#include <iostream>
+
+#include <iomanip>
+
+
+
+int main()
+
+{
+
+int number;
+
+
+
+std::cout << "Enter a number: ";
+
+std::cin >> number;
+
+
+
+bool boolValue = static_cast<bool>(number);
+
+
+
+std::cout << std::boolalpha << "Value in bool format: " << boolValue << std::endl;
+
+
+
+return 0;
+
+}
+

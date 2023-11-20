@@ -1,0 +1,56 @@
+Task3.
+
+#include <iostream>
+
+int main()
+
+{
+
+  std::cout << "I love C++!\n";
+
+}
+
+
+
+
+
+
+
+Task4.
+
+#include <iostream>
+
+#include <string>
+
+int main()
+
+{
+
+  std::string line1 = "*";
+
+  std::string line2 = "**";
+
+  std::string line3 = "***";
+
+  std::string line4 = "****";
+
+  std::string line5 = "*****";
+
+
+
+  std::cout << line1 << std::endl;
+
+  std::cout << line2 << std::endl;
+
+  std::cout << line3 << std::endl;
+
+  std::cout << line4 << std::endl;
+
+  std::cout << line5 << std::endl;
+
+
+
+  return 0;
+
+}
+

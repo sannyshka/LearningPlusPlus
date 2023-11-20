@@ -1,0 +1,237 @@
+Task1.
+
+#include <iostream>
+
+
+
+int main()
+
+{
+
+int totalSeconds;
+
+
+
+std::cout << "Enter number of seconds: ";
+
+std::cin >> totalSeconds;
+
+
+
+int hours = totalSeconds / 3600;
+
+int remainingSeconds = totalSeconds % 3600;
+
+int minutes = remainingSeconds / 60;
+
+int seconds = remainingSeconds % 60;
+
+
+
+std::cout << hours << " hours, " << minutes << " minutes, " << seconds << " seconds. " << std::endl;
+
+
+
+return 0;
+
+}
+
+
+
+Task2.
+
+#include <iostream>
+
+
+
+int main()
+
+{
+
+int num1, num2, num3;
+
+std::cout << "Enter the first number: ";
+
+std::cin >> num1;
+
+std::cout << "Enter the second number: ";
+
+std::cin >> num2;
+
+std::cout << "Enter the third number: ";
+
+std::cin >> num3;
+
+
+
+int sum = num1 + num2 + num3;
+
+int product = num1 * num2 * num3;
+
+double average = static_cast<double>(sum) / 3;
+
+
+
+std::cout << "Sum: " << sum << std::endl;
+
+std::cout << "Product: " << product << std::endl;
+
+std::cout << "Average " << average << std::endl;
+
+
+
+std::cout << "Comparison result " << num1 << " end " << num2 << ": " << (num1 == num2 ? "equal" : "not equal") << std::endl;
+
+std::cout << "Comparison result " << num2 << " end " << num3 << ": " << (num2 == num3 ? "equal" : "not equal") << std::endl;
+
+
+
+return 0;
+
+}
+
+
+
+Task3.
+
+#include <iostream>
+
+#include <string>
+
+
+
+int main()
+
+{
+
+int num1, num2;
+
+std::cout << "Enter the first number: ";
+
+std::cin >> num1;
+
+std::cout << "Enter the second number: ";
+
+std::cin >> num2;
+
+
+
+bool lessThan = (num1 < num2);
+
+bool equal = (num1 == num2);
+
+bool moreThan = (num1 > num2);
+
+bool lessOrEqual = (num1 <= num2);
+
+
+
+std::cout << "lessThan: " << lessThan << std::endl;
+
+std::cout << "equal: " << equal << std::endl;
+
+std::cout << "moreThan: " << moreThan << std::endl;
+
+std::cout << "lessOrEqual: " << lessOrEqual << std::endl;
+
+
+
+std::cout << "lessThan (string): " << (lessThan ? "true" : "false") << std::endl;
+
+std::cout << "equal (string): " << (equal ? "true" : "false") << std::endl;
+
+std::cout << "moreThan (string): " << (moreThan ? "true" : "false") << std::endl;
+
+std::cout << "lessOrEqual (string): " << (lessOrEqual ? "true" : "false") << std::endl;
+
+
+
+return 0;
+
+
+
+}
+
+
+
+Task4.
+
+#include <iostream>
+
+
+
+int main()
+
+{
+
+double width, height;
+
+std::cout << "Enter the width of the rectangle: ";
+
+std::cin >> width;
+
+std::cout << "Enter the height of the rectangle: ";
+
+std::cin >> height;
+
+
+
+double area = width * height;
+
+double perimeter = 2 * (width + height);
+
+
+
+std::cout << "Area of the rectangle: " << area << std::endl;
+
+std::cout << "Perimeter of the rectangle: " << perimeter << std::endl;
+
+
+
+return 0;
+
+}
+
+
+
+Task5.
+
+﻿#include <iostream>
+
+#define _USE_MATH_DEFINES
+
+#include <math.h>
+
+
+
+
+
+int main()
+
+{
+
+double radius;
+
+std::cout << "Enter the radius of the circle: ";
+
+std::cin >> radius;
+
+
+
+double area = M_PI * pow(radius, 2);
+
+double circumference = 2 * M_PI * radius;
+
+
+
+std::cout << "Circle area: " << area << std::endl;
+
+std::cout << "Circuit: " << circumference << std::endl;
+
+
+
+return 0;
+
+
+
+}
