@@ -1,0 +1,35 @@
+#include <iostream>
+
+#include <string>
+
+int main()
+
+{
+
+  std::string line1 = "*";
+
+  std::string line2 = "**";
+
+  std::string line3 = "***";
+
+  std::string line4 = "****";
+
+  std::string line5 = "*****";
+
+
+
+  std::cout << line1 << std::endl;
+
+  std::cout << line2 << std::endl;
+
+  std::cout << line3 << std::endl;
+
+  std::cout << line4 << std::endl;
+
+  std::cout << line5 << std::endl;
+
+
+
+  return 0;
+
+}
